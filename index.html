@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP LOOK UP</title>
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <style>
+        .container {
+            display: flex;
+            width: 95%;
+            flex-direction: column;
+        }
+
+        .obj {
+            width: 100%;
+            margin: 15px;
+        }
+
+        .backg {
+            background: rgb(244, 232, 232);
+        }
+
+        .data {
+            margin-top: 10px;
+            margin: 5px;
+        }
+
+        .content {
+            margin: 3px;
+            padding: 4px;
+            border-bottom: 1px solid blueviolet;
+        }
+    </style>
+    <div class="container">
+        <div class="obj">
+            <div class="">
+                <span style="border: 2px solid black;padding: 2px;" class="backg">Enter Ip</span>
+                <input id="inp" placeholder="____.____.____.____" type="text" class="backg">
+                <button id="srch">Search</button>
+            </div>
+            <div class="" style="display: flex;">
+                <div class="data" style="margin: 5x;border: 1px solid black; padding: 5px; width: 50%;">
+
+                </div>
+                <div class="data" style="margin: 5x;border: 1px solid black; padding: 5px; width: 50%;">
+                    <div class="data"><b>FLAG :</b> <img id="im" src="" height="25%" width="25%" style="background-repeat:no-repeat;"
+                            alt=""></div>
+                            <br><br>
+                    <div class="data"><b>Connection|ISP :</b>
+                        <div style="display:inline" id="cisp"></div>
+                    </div>
+                    <br>
+                    <div class="data"><b>Time :</b>
+                        <div style="display:inline" id="time"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="obj">
+            <iframe id="map" src="https://www.google.com/maps/embed" width="75%" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>
